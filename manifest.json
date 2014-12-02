@@ -3,16 +3,19 @@
   "description": "Yubikey NEO Setup with Strong Authentication and Secure Email certificates via a Chrome App",
   "version": "0.2",
   "manifest_version": 2,
-  "icons": {
-    "16":	"icon_16.png",
-    "128":	"icon_128.png"
-  },
-  "app":{
+  "minimum_chrome_version": "39",
+  "app": {
     "background": {
       "scripts":  ["background.js"]
     }
   },
   "permissions": [
-    "usb"
-  ]
+    "usb",
+    { "usbDevices": [ { "vendorId": 4176,"productId": 274 },
+                      { "vendorId": 4176,"productId": 277 } ] }
+  ],
+  "icons": {
+    "16":	"assets/icon_16.png",
+    "128":	"assets/icon_128.png"
+  }
 }

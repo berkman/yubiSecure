@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>yubiSecure</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Token Settings:</h1>
+    <table>
+    <tr>
+      <td>Management Key:</td>
+      <td><input type="password" name="mgmt_key" /></td>
+      <td><input type="submit" name="mgmt_key_update" value="Update" /></td>
+    </tr>
+    <tr>
+      <td>Initial PIN:</td>
+      <td><input type="password" name="pin" /></td>
+      <td><input type="submit" name="puk_update" value="Update" /></td>
+    </tr>
+    <tr>
+      <td>Initial PUK:</td>
+      <td><input type="password" name="puk" /></td>
+      <td><input type="submit" name="puk_update" value="Update" /></td>
+    </tr>
+    </table>
+    <br />
+    <h1>Strong Auth Settings:</h1>
+    <table>
+    <tr>
+      <td>Full Name:</td>
+      <td><input type="text" name="full_name" /></td>
+    </tr>
+    <tr>
+      <td>Organization:</td>
+      <td><input type="text" name="organization" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="user_submit" value="Submit" /></td>
+    </tr>
+    </table>
+    <h1>Secure Email Settings:</h1>
+    <table>
+    <tr>
+      <td>P12 File:</td>
+      <td><input type="file" name="p12_file" /></td>
+    </tr>
+    <tr>
+      <td>P12 Password:</td>
+      <td><input type="password" name="p12_password" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="user_submit" value="Submit" /></td>
+    </tr>
+    </table>
+    <input type="text" id="test" />
+  <script src="script.js"></script>
+  </body>
+</html>
