@@ -1,0 +1,18 @@
+{
+  "name": "yubiSecure",
+  "description": "Yubikey NEO Setup with Strong Authentication and Secure Email certificates via a Chrome App",
+  "version": "0.2",
+  "manifest_version": 2,
+  "icons": {
+    "16":	"icon_16.png",
+    "128":	"icon_128.png"
+  },
+  "app":{
+    "background": {
+      "scripts":  ["background.js"]
+    }
+  },
+  "permissions": [
+    "usb"
+  ]
+}
